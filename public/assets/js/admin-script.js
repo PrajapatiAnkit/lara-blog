@@ -10,9 +10,32 @@ $("form#adminLogin").on("submit",function (e) {
     var _token = $("#_token").val();
 
     var formAction = $("#adminLogin").attr("action");
-    $.post(formAction, {
-            userName:userName,userPassword:userPassword,_token:_token},
-        function (response) {
-        alert(response);
+    $.ajax({
+        url: formAction,
+        method:"POST",
+        data:{
+            userName:userName,
+            userPassword:userPassword,
+            _token:_token
+        },
+        dataType:'json',
+        success:function (response) {
+
+        },
+        error: function(errorResponse) {
+            if (errorResponse.responseJSON.errors.userName){
+                $("#usernameError").show();
+                $("#usernameError").html((errorResponse.responseJSON.errors.userName));
+            }else{
+                $("#usernameError").hide();
+            }
+            if (errorResponse.responseJSON.errors.userPassword){
+                $("#userPasswordError").show();
+                $("#userPasswordError").html((errorResponse.responseJSON.errors.userPassword));
+            }else{
+                $("#userPasswordError").hide();
+            }
+            console.log(errorResponse.responseJSON.errors);
+        }
     });
 });

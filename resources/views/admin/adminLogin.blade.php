@@ -55,6 +55,8 @@
         }
     </style>
     <link href="{{asset('static/adminator/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/custom-css.css')}}" rel="stylesheet"/>
+
 </head>
 
 <body class="app">
@@ -83,10 +85,12 @@
             <div class="form-group">
                 <label class="text-normal text-dark">Username</label>
                 <input type="text" name="userName" id="userName" class="form-control" placeholder="John Doe">
+                <div class="error-messages" id="usernameError">usernameError</div>
             </div>
             <div class="form-group">
                 <label class="text-normal text-dark">Password</label>
                 <input type="password" name="userPassword" id="userPassword" class="form-control" placeholder="Password">
+                <div class="error-messages" id="userPasswordError">userPasswordError</div>
             </div>
             <div class="form-group">
                 <div class="peers ai-c jc-sb fxw-nw">

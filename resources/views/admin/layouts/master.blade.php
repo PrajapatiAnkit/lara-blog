@@ -59,6 +59,7 @@
         }
     </style>
     <link href="{{asset('static/adminator/style.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/custom-css.css')}}" rel="stylesheet"/>
 </head>
 
 <body class="app">
