@@ -1,0 +1,11 @@
+
+.field-required{
+    color: red;
+    font-size: 15px;
+}
+
+.alert-success-2{
+    background-color: #18c585;
+    color: white;
+    font-weight: bold;
+}
