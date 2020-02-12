@@ -24,11 +24,9 @@ Route::get('/login','UsersController@login')->name('login');
 /* admin routes */
 
 Route::get('/admin/login','AdminController@adminLogin')->name('adminLogin');
+Route::get('/admin/adminLogout','AdminController@adminLogout')->name('adminLogout');
 Route::post('/admin/validateAdminLogin','AdminController@validateAdminLogin')->name('validateAdminLogin');
-
 Route::get('/admin/dashboard','AdminController@dashboard')->name('dashboard');
 Route::get('/admin/add-blog','BlogController@addBlog')->name('addBlog');
 Route::get('/admin/blog-list','BlogController@blogList')->name('blogList');
 Route::get('/admin/users-list','BlogController@usersList')->name('usersList');
-
-

@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Admin;
+use App\Http\Requests\ValidationRequestClass;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Validator;
 class AdminController extends Controller
@@ -15,28 +18,26 @@ class AdminController extends Controller
         return view('admin.dashboard');
     }
 
-    public function validateAdminLogin(Request $request)
+    public function validateAdminLogin(ValidationRequestClass  $request)
     {
-        $validator = Validator::make($request->all(), [
-            'userName' => 'required',
-            'userPassword' => 'required',
-        ],[
-            'userName.required' => 'Username required.',
-            'userPassword.required' => 'Password required.',
-        ]);
-
-        if ($validator->fails())
-        {
-            return response()->json(['errors'=>$validator->errors()],422);
-        }
-
+        $validated = $request->validated();
         $username = $request->input('userName');
         $userPassword = $request->input('userPassword');
 
 
-        $query = DB::select("SELECT * lara_users WHERE username=? AND password=?",$username,$userPassword);
-        print_r($query);
-            //return response()->json(['success'=>'Record is successfully added']);
-
+        if (Auth::attempt(array('username'=>$username,'password'=>$userPassword))){
+            return response()->json(['status' => '1', 'successUrl' => route('dashboard')]);
+           // echo Auth::user()->id;
+        }else{
+            return response()->json(['status' => '0']);
+        }
     }
+
+    public function adminLogout()
+    {
+        Auth::logout();
+        return redirect()->route('adminLogin');
+    }
+
+
 }

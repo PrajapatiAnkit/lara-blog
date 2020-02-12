@@ -10,19 +10,37 @@ $("form#adminLogin").on("submit",function (e) {
     var _token = $("#_token").val();
 
     var formAction = $("#adminLogin").attr("action");
+    if (userName !='' && userPassword !=''){
+        $("#loaderIcon").show('fast');
+    }
     $.ajax({
         url: formAction,
         method:"POST",
         data:{
             userName:userName,
             userPassword:userPassword,
-            _token:_token
+            _token:_token,
+            userType:1
         },
         dataType:'json',
         success:function (response) {
+           // if (response.respose)
+            console.log(response.success);
+            if (response.success){
+                $("#usernameError").hide();
+                $("#userPasswordError").hide();
+            }
 
+            if (response.status == 1){
+                window.location.href  = response.successUrl;
+            }else{
+                alert("login failed");
+            }
+            $("#loaderIcon").hide('fast');
         },
         error: function(errorResponse) {
+            console.log(errorResponse.responseJSON.errors);
+
             if (errorResponse.responseJSON.errors.userName){
                 $("#usernameError").show();
                 $("#usernameError").html((errorResponse.responseJSON.errors.userName));
@@ -35,7 +53,7 @@ $("form#adminLogin").on("submit",function (e) {
             }else{
                 $("#userPasswordError").hide();
             }
-            console.log(errorResponse.responseJSON.errors);
+            $("#loaderIcon").hide('fast');
         }
     });
 });

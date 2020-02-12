@@ -13,14 +13,15 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('lara_userss', function (Blueprint $table) {
+        Schema::create('lara_users', function (Blueprint $table) {
+
             $table->bigIncrements('id');
             $table->string('username',100);
             $table->string('password',100);
             $table->string('email',100);
             $table->string('contact',100);
             $table->string('profile',100);
-            $table->integer('userType');
+            $table->integer('user_type')->comment('1=>Admin,2=>User');
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lara_userss');
+        Schema::dropIfExists('lara_users');
     }
 }
