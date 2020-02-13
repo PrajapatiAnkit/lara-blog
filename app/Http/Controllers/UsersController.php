@@ -12,12 +12,4 @@ class UsersController extends Controller
 
     }
 
-    public function signup()
-    {
-        return view('user.usersignup');
-    }
-    public function login()
-    {
-        return view('user.userlogin');
-    }
 }

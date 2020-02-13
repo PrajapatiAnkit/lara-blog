@@ -71,6 +71,7 @@
             }, 300);
         });
     </script>
+
 <div class="peers ai-s fxw-nw h-100vh">
     <div class="d-n@sm- peer peer-greed h-100 pos-r bgr-n bgpX-c bgpY-c bgsz-cv" style="background-image:url({{asset('static/adminator/assets/static/images/bg.jpg')}})">
         <div class="pos-a centerXY">
@@ -79,19 +80,19 @@
     </div>
     <div class="col-12 col-md-4 peer pX-40 pY-80 h-100 bgc-white scrollable pos-r" style="min-width:320px">
         <h4 class="fw-300 c-grey-900 mB-40">Login</h4>
-       {{-- @if(isset(Auth::user()->id
-        ))--}}
-        <script>window.location.href = ''</script>
-        <form id="adminLogin" action="{{route('validateAdminLogin')}}">
+       {{-- @if(isset(Auth::user()->email))
+            <script>window.location="{{route('dashboard')}}";</script>
+        @endif--}}
+            <form id="adminLogin" action="{{route('validateAdminLogin')}}">
             <input type="hidden" name="_token" id="_token" value="{{csrf_token()}}">
 
             <div class="form-group">
-                <label class="text-normal text-dark">Username</label>
+                <label class="text-normal text-dark">Username <span class="field-required">*</span></label>
                 <input type="text" name="userName" id="userName" class="form-control" placeholder="John Doe">
                 <div class="error-messages" id="usernameError">usernameError</div>
             </div>
             <div class="form-group">
-                <label class="text-normal text-dark">Password</label>
+                <label class="text-normal text-dark">Password <span class="field-required">*</span></label>
                 <input type="password" name="userPassword" id="userPassword" class="form-control" placeholder="Password">
                 <div class="error-messages" id="userPasswordError">userPasswordError</div>
             </div>

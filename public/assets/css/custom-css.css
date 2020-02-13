@@ -1,6 +1,25 @@
 
+.field-required{
+    color: red;
+    font-size: 15px;
+}
+
+.alert-success-2{
+    background-color: #18c585;
+    color: white;
+    font-weight: bold;
+}
+
+.alert-danger-2{
+    background-color: #c53734;
+    color: white;
+    font-weight: bold;
+}
+
+
 .error-messages{
     color: red;
     font-size: 15px;
     display: none;
 }
+

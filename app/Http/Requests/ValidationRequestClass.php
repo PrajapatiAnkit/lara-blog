@@ -26,19 +26,42 @@ class ValidationRequestClass extends FormRequest
      */
     public function rules()
     {
-        return [
-            'userName' => 'required',
-            'userPassword' => 'required',
-        ];
+          if ($this->input('validationRule') == 'addBlog'){
+
+              $validationsRules = [
+                  'blogTitle' => 'required',
+                  'blogCategory' => 'required',
+                  'blogDescription' => 'required',
+              ];
+          }
+         else if ($this->input('validationRule') == 'adminLogin'){
+                $validationsRules =  [
+                'userName' => 'required',
+                'userPassword' => 'required',
+            ];
+          }
+
+       else if ($this->input('validationRule') == 'addCategory'){
+            $validationsRules =  [
+                'categoryName' => 'required',
+            ];
+        }
+      return $validationsRules;
+
+
 
     }
+
 
     public function messages()
     {
         return [
             'userName.required' => 'Username is required',
-           // 'userName.max' => 'Username can not be greater than 5 characters',
             'userPassword.required' => 'Password is required',
+            'blogTitle.required' => 'Blog is required',
+            'blogCategory.required' => 'Category is required',
+            'blogDescription.required' => 'Description is required',
+            'categoryName.categoryName' => 'Category name is required',
         ];
     }
 
