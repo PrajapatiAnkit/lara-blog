@@ -32,6 +32,7 @@ class ValidationRequestClass extends FormRequest
                   'blogTitle' => 'required',
                   'blogCategory' => 'required',
                   'blogDescription' => 'required',
+                  'blogImage' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
               ];
           }
          else if ($this->input('validationRule') == 'adminLogin'){
@@ -61,7 +62,7 @@ class ValidationRequestClass extends FormRequest
             'blogTitle.required' => 'Blog is required',
             'blogCategory.required' => 'Category is required',
             'blogDescription.required' => 'Description is required',
-            'categoryName.categoryName' => 'Category name is required',
+            'categoryName.required' => 'Category name is required',
         ];
     }
 

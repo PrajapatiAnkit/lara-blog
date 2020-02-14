@@ -71,6 +71,7 @@
                         </ul>
                     </li>
                     <li><a href="{{route('contact')}}">Contact</a></li>
+                    <li><a href="{{route('login')}}">Login/Signup</a></li>
                 </ul>
             </nav>
         </div>

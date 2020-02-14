@@ -25,9 +25,9 @@ $("form#adminLogin").on("submit",function (e) {
         },
         dataType:'json',
         success:function (response) {
-           // if (response.respose)
-            console.log(response.success);
-            if (response.success){
+
+            console.log(response);
+            if (response.status == 0){
                 $("#usernameError").hide();
                 $("#userPasswordError").hide();
             }
@@ -72,14 +72,18 @@ $("form#addBlogForm").on('submit',function (e) {
     $.ajax({
         url: formAction,
         method:"POST",
-        data:{
+       /* data:{
             blogTitle:blogTitle,
             blogCategory:blogCategory,
             blogDescription:blogDescription,
             _token:_token,
             validationRule:validationRule,
-        },
-        dataType:'json',
+        },*/
+       data: new FormData(this),
+       dataType:'json',
+        contentType: false,
+        cache: false,
+        processData: false,
         success:function (response) {
             console.log(response);
             if (response.status == 1){
@@ -115,13 +119,90 @@ $("form#addBlogForm").on('submit',function (e) {
 $("form#resetPassword").on('submit',function (e) {
     e.preventDefault();
     var currentPassword = $("#currentPassword").val();
+    var key = $("#key").val();
     var _token = $("#_token").val();
     var formAction = $("#resetPassword").attr("action");
 
-    $.post(formAction,{currentPassword:currentPassword,_token:_token},function (response) {
-     //   alert(response);
-        console.log(response);
-    })
+    if (currentPassword == ''){
+        $("#currentPasswordError").show();
+        $("#currentPasswordError").html("Please enter current password");
+        $("#currentPasswordError").fadeOut(4000);
+    }else{
+        if (key == 'verifyPassword') {
+            $.post(formAction,{currentPassword:currentPassword,_token:_token,key:key},function (response) {
+                console.log(response);
+                if (response.statusValue == 1){
+                    $("#resetDiv").show('fast');
+                    $("#key").val('verified');
+
+                }else if (response.statusValue == 0) {
+                    $("#currentPasswordError").show();
+                    $("#currentPasswordError").html("Current password not matched");
+                    $("#currentPasswordError").fadeOut(4000);
+                    $("#resetDiv").hide();
+                }
+            });
+        }else if (key == 'verified'){
+            var newPassword = $("#newPassword").val();
+            var confirmPassword = $("#confirmPassword").val();
+
+            if (newPassword == ''){
+                $("#newPasswordError").show();
+                $("#newPasswordError").html("Please enter new password");
+                $("#newPasswordError").fadeOut(4000);
+            }else if (confirmPassword == ''){
+                $("#confirmPasswordError").show();
+                $("#confirmPasswordError").html("Please enter confirm password");
+                $("#confirmPasswordError").fadeOut(4000);
+            }else if (newPassword != confirmPassword){
+                $("#confirmPasswordError").show();
+                $("#confirmPasswordError").html("Confirm password not matched with new password");
+                $("#confirmPasswordError").fadeOut(4000);
+
+            }else {
+                $.post(formAction,{key:key,newPassword:newPassword,_token:_token},function (responseData) {
+                    console.log(responseData);
+                    $("#showSuccess").show('fast');
+                    $("#showSuccess").html("Your password updated !");
+                    $("#resetDiv").hide('fast');
+                    $("#key").val('verifyPassword');
+                    $("form#resetPassword").each(function () {
+                        this.reset();
+                    })
+                });
+            }
+        }
+
+    }
+
+});
+
+function deleteCategory(deleteUrl) {
+    if (confirm("Are you sure to delete ?")){
+        window.location.href = deleteUrl;
+    }
+}
+function deleteBlog(deleteUrl) {
+    if (confirm("Are you sure to delete ?")){
+        window.location.href = deleteUrl;
+    }
+}
+
+/* comment */
+$("form#commentForm").on('submit',function (e) {
+    e.preventDefault();
+    var commentText = $("#commentText").val();
+    var _token = $("#_token").val();
+    var formAction = $("#commentForm").attr("action");
+    if (commentText == ''){
+        $("#commentTextError").show();
+        $("#commentTextError").html("Please type something");
+        $("#commentText").focus();
+    }else {
+        $.post(formAction,{commentText:commentText,_token:_token},function (response) {
+            alert(response);
+        });
+    }
 
 });
 

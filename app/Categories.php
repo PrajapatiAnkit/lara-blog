@@ -14,4 +14,16 @@ class Categories extends Model
         $query = Self::all();
         return $query;
     }
+
+    public function getCategoryById($id)
+    {
+        $query = Self::where('id',$id)->first();
+        return $query;
+    }
+
+    public function deleteCategory()
+    {
+
+
+    }
 }

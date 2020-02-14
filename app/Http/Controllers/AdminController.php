@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Admin;
 use App\Blog;
 use App\Categories;
 use App\Http\Requests\ValidationRequestClass;
@@ -28,6 +27,8 @@ class AdminController extends Controller
         $totalBlogs = Blog::count();
         $totalCategories = Categories::count();
 
+       // $user = Auth::user();
+
         $data = array(
             'totalBlogs'=>$totalBlogs,
             'totalCategories'=>$totalCategories,
@@ -42,7 +43,10 @@ class AdminController extends Controller
         $validated = $request->validated();
         $username = $request->input('userName');
         $userPassword = $request->input('userPassword');
-        if (Auth::attempt(array('username'=>$username,'password'=>$userPassword))){
+        $loginData = array('username'=>$username,'password'=>$userPassword);
+      //  print_r($loginData);die();
+
+        if (Auth::attempt($loginData)){
             return response()->json(['status' => '1', 'successUrl' => route('dashboard')]);
         }else{
             return response()->json(['status' => '0']);
@@ -62,17 +66,29 @@ class AdminController extends Controller
 
     public function validateCurrentPassword(Request $request)
     {
+        $key =  $request->input('key');
         $currentPassword =  $request->input('currentPassword');
         $auth = Auth::user();
-        if (! (Hash::check($request->get('old_password'),$currentPassword ))){
-            throw new Exception('notMatched');
+
+        if ($key == 'verifyPassword'){
+
+            if (Hash::check($currentPassword,$auth->getAuthPassword())){
+                return response()->json(['statusValue'=>1,'password'=>'verified']);
+            }else{
+                return response()->json(['statusValue'=>0]);
+            }
+        }else if ($key == 'verified'){
+            $newPassword = $request->input('newPassword');
+            $userId =  $auth->id;
+
+           $updatePassword =  $auth->update(array('password' =>bcrypt($newPassword)));
+           if ($updatePassword){
+               return response()->json(['updateStatus'=>1]);
+           }else{
+               return response()->json(['updateStatus'=>0]);
+           }
+
         }
-
-       /* $check = DB::table('lara_users')->where(
-            array('password'=>Hash::make($currentPassword), 'id'=>Auth::id())
-        )->get();
-
-        print_r($check);*/
     }
 
 

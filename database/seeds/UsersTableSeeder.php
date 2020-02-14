@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder
     {
       User::create([
           'username' => 'ankit',
-          'password' => Hash::make('12345678'),
+          'password' => bcrypt('12345678'),
           'email' => 'ankit@gmail.com',
           'contact' => '7905266028',
           'profile' => '',

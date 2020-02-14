@@ -19,6 +19,7 @@
                                 <tr>
                                     <th>Sr.No</th>
                                     <th>Category Name</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
 
@@ -28,6 +29,10 @@
                                         <tr>
                                             <td>{{$sr+1}}</td>
                                             <td>{{$cat->category_name}}</td>
+                                            <td>
+                                                <a href="{{route('editCategory',['id'=>$cat->id])}}" class="btn btn-primary btn-sm">Edit <i class="fa fa-edit"></i></a>
+                                                <a href="javaScript:void(0);" onclick='deleteCategory("{{route('deleteCategory',['id'=>$cat->id])}}");' class="btn btn-danger btn-sm">Delete <i class="fa fa-trash"></i></a>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     @endif

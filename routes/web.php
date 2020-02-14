@@ -44,3 +44,21 @@ Route::post('/admin/saveCategory','BlogController@saveCategory')->name('saveCate
 Route::get('/admin/password-setting','AdminController@passwordSetting')->name('passwordSetting');
 Route::post('/admin/validateCurrentPassword','AdminController@validateCurrentPassword')->name('validateCurrentPassword');
 
+/* edit & delete category routes */
+
+Route::get('/admin/edit-category/{id}','CategoryController@editCategory')->name('editCategory');
+Route::get('/admin/delete-category/{id}','CategoryController@deleteCategory')->name('deleteCategory');
+Route::post('/admin/updateCategory','CategoryController@updateCategory')->name('updateCategory');
+
+
+/* edit & delete blog routes */
+
+Route::get('/admin/edit-blog/{id}','BlogController@editBlog')->name('editBlog');
+Route::get('/admin/delete-blog/{id}','BlogController@deleteBlog')->name('deleteBlog');
+Route::post('/admin/updateBlog','BlogController@updateBlog')->name('updateBlog');
+
+/* forum routes */
+Route::get('/admin/forum','ForumController@index')->name('forum');
+Route::get('/admin/forum-detail/{id}/{slug}','ForumController@detail')->name('detail');
+Route::post('/admin/saveComment','ForumController@saveComment')->name('saveComment');
+
