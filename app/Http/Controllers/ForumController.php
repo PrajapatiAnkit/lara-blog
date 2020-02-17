@@ -14,8 +14,8 @@ class ForumController extends Controller
     public function index()
     {
         $blogsObj = new Blog();
-        echo '<pre>';
-        print_r($blogsObj->getAllBlogs()->toArray());die();
+       // echo '<pre>';
+       // print_r($blogsObj->getAllBlogs()->toArray());die();
 
         return view('admin.forum',['blogs' => $blogsObj->getAllBlogs()]);
     }

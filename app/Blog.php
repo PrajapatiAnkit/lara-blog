@@ -30,8 +30,8 @@ class Blog extends Model
     public function comments()
     {
         return $this->hasMany('App\Comment','blog_id','id')
-            ->take(2)
-            ->orderBy('id','DESC');
+            ->orderBy('id','DESC')
+            ->limit(2);
     }
 
 }

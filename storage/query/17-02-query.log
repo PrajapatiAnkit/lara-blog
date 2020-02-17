@@ -1,0 +1,36 @@
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["2"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[5]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[5]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["2",5]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`blog_category` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[5]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`blog_category` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (2, 3, 4, 5, 6, 7, 8, 9, 11, 12) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`blog_category` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (2, 3, 4, 5, 6, 7, 8, 9, 11, 12) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[5]  	
+----------------------------------------------
+
