@@ -17,6 +17,13 @@
                                             <p class="card-text">{{$blog->blog_description}}</p>
                                             <a href="#" class="btn btn-success btn-sm">Like <i class="fa  fa-thumbs-o-up"></i></a>
                                             <a href="#" class="btn btn-info btn-sm">Comment <i class="fa fa-commenting"></i></a>
+                                            <ul class="list-group list-group-flush" id="commentsData" style="margin-top: 20px;">
+                                                @foreach($blog->comments as $comment)
+                                                    <li class="list-group-item"><img src="http://127.0.0.1:8000/static/adminator/randomuser.me/api/portraits/men/10.jpg" width="30" style="border-radius: 50%;">{{$comment->comment}}</li>
+                                                @endforeach
+
+                                            </ul>
+
                                         </div><hr/>
                                     @endforeach
                                 @endif

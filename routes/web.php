@@ -61,4 +61,5 @@ Route::post('/admin/updateBlog','BlogController@updateBlog')->name('updateBlog')
 Route::get('/admin/forum','ForumController@index')->name('forum');
 Route::get('/admin/forum-detail/{id}/{slug}','ForumController@detail')->name('detail');
 Route::post('/admin/saveComment','ForumController@saveComment')->name('saveComment');
+Route::post('/admin/getCommentsById','ForumController@getCommentsById');
 

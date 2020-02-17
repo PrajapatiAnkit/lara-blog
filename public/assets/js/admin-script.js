@@ -192,6 +192,7 @@ function deleteBlog(deleteUrl) {
 $("form#commentForm").on('submit',function (e) {
     e.preventDefault();
     var commentText = $("#commentText").val();
+    var blogId = $("#blogId").val();
     var _token = $("#_token").val();
     var formAction = $("#commentForm").attr("action");
     if (commentText == ''){
@@ -199,10 +200,28 @@ $("form#commentForm").on('submit',function (e) {
         $("#commentTextError").html("Please type something");
         $("#commentText").focus();
     }else {
-        $.post(formAction,{commentText:commentText,_token:_token},function (response) {
-            alert(response);
+        $.post(formAction,{commentText:commentText,_token:_token,blogId:blogId},function (response) {
+         // console.log(response)
+            var commentsData = '';
+            for (var i=0; i<response.comments.length; i++) {
+                var commentItem = response.comments[i];
+                commentsData +='<li class="list-group-item"><img src="http://127.0.0.1:8000/static/adminator/randomuser.me/api/portraits/men/10.jpg" width="30" style="border-radius: 50%;">  '+commentItem.comment+'</li>\n';
+            }
+            $("#commentsData").html(commentsData);
         });
     }
-
 });
+
+function getCommentsById(blogId) {
+    var _token = $("#_token").val();
+    $.post("/admin/getCommentsById",{blogId:blogId,_token:_token},function (response) {
+       // alert(response);
+        var commentsData = '';
+        for (var i=0; i<response.comments.length; i++) {
+            var commentItem = response.comments[i];
+            commentsData +='<li class="list-group-item"><img src="http://127.0.0.1:8000/static/adminator/randomuser.me/api/portraits/men/10.jpg" width="30" style="border-radius: 50%;">  '+commentItem.comment+'</li>\n';
+        }
+        $("#commentsData").html(commentsData);
+    });
+}
 

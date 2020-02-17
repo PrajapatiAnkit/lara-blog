@@ -22,7 +22,7 @@ class BlogController extends Controller
 
     public function saveBlog(ValidationRequestClass $request)
     {
-        $validattion = $request->validated();
+       
         $blog = new Blog();
         $blog->blog_title = $request->input('blogTitle');
         $blog->blog_category = $request->input('blogCategory');

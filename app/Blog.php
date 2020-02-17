@@ -13,12 +13,25 @@ class Blog extends Model
 
     public function getAllBlogs()
     {
-        $query = DB::table('lara_blogs')
+        $query = self::with('comments')
             ->join('lara_categories','lara_blogs.blog_category','=','lara_categories.id')
             ->join('lara_users','lara_blogs.added_by','=','lara_users.id')
             ->select('lara_blogs.*','lara_categories.category_name','lara_users.username')
             ->get();
         return $query;
+    }
+
+    public function getBlogById($id)
+    {
+        $query = Self::find($id);
+        return $query;
+    }
+
+    public function comments()
+    {
+        return $this->hasMany('App\Comment','blog_id','id')
+            ->take(2)
+            ->orderBy('id','DESC');
     }
 
 }
