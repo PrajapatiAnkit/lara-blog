@@ -30,6 +30,10 @@ class BlogRequest extends FormRequest
         ];
     }
 
+    /**
+     * @todo it customises the error messages
+     * @return array
+     */
     public function messages()
     {
         return [

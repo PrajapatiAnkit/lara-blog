@@ -225,3 +225,13 @@ function getCommentsById(blogId) {
     });
 }
 
+function likesTheBlog(blogId) {
+    var _token = $("#_token").val();
+    $.post("/admin/doLike",{blogId:blogId,_token:_token},function (response) {
+        if (response.liked == 'yes'){
+            $('#likeBtn'+blogId).attr('disabled','disabled');
+            $('#likeBtn'+blogId).html('liked');
+        }
+    });
+}
+

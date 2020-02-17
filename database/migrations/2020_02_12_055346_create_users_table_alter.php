@@ -13,7 +13,7 @@ class CreateUsersTableAlter extends Migration
      */
     public function up()
     {
-        Schema::table('lara_users', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->text('address');
         });
     }

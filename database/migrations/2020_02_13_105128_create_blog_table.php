@@ -13,12 +13,15 @@ class CreateBlogTable extends Migration
      */
     public function up()
     {
-        Schema::create('lara_blogs', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('blog_title','255');
-            $table->string('blog_category','255');
+            $table->string('category_id','255');
             $table->string('blog_description','255');
+            $table->string('blog_images','255');
             $table->integer('added_by');
+            $table->string('blog_slug','255');
+            $table->integer('like_status');
             $table->timestamps();
         });
     }

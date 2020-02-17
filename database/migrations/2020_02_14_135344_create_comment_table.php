@@ -13,8 +13,9 @@ class CreateCommentTable extends Migration
      */
     public function up()
     {
-        Schema::create('lara_comments', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('blog_id');
             $table->string('comment','255');
             $table->integer('userId');
             $table->timestamps();
