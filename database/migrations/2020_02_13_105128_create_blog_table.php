@@ -21,7 +21,10 @@ class CreateBlogTable extends Migration
             $table->string('blog_images','255');
             $table->integer('added_by');
             $table->string('blog_slug','255');
-            $table->integer('like_status');
+            $table->integer('like_count');
+            $table->integer('dislike_count');
+            $table->integer('comment_count');
+            $table->string('liked_by_users','255');
             $table->timestamps();
         });
     }

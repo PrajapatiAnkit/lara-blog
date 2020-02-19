@@ -27,9 +27,10 @@ class Comment extends Model
      */
     public static function saveComment($request,$userId)
    {
+       $blogId = $request->input('blogId');
        $saveQuery = Self::create([
                 'comment' => $request->input('commentText'),
-                'blog_id' => $request->input('blogId'),
+                'blog_id' => $blogId,
                 'userId' => $userId,
             ]
         );

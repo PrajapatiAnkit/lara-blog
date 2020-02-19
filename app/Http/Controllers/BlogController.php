@@ -53,6 +53,7 @@ class BlogController extends Controller
 
         $blog->blog_images = $newImageName;
         $blog->like_status = 0;
+        $blog->liked_by_users = '';
         $blog->blog_slug = $this->slugify($request->input('blogTitle'));
         $save = $blog->save();
         if ($save){

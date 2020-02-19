@@ -45,7 +45,9 @@ Route::get('/admin/categories','BlogController@categories')->name('categories')-
 Route::get('/admin/add-category','BlogController@showAddCategoryForm')->name('addcategory')->middleware('auth');;
 Route::post('/admin/saveCategory','BlogController@saveCategory')->name('saveCategory')->middleware('auth');;
 Route::get('/admin/password-setting','AdminController@passwordSetting')->name('passwordSetting')->middleware('auth');;
-Route::post('/admin/validateCurrentPassword','AdminController@validateCurrentPassword')->name('validateCurrentPassword')->middleware('auth');;
+Route::post('/admin/validateCurrentPassword','AdminController@validateCurrentPassword')->name('validateCurrentPassword')->middleware('auth');
+Route::get('/admin/profile','AdminController@showProfile')->name('showProfile')->middleware('auth');
+Route::post('/admin/updateProfile','AdminController@updateProfile')->name('updateProfile')->middleware('auth');
 
                 /* edit & delete category routes */
 

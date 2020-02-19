@@ -1585,3 +1585,6 @@ select count(*) as aggregate from `lara_blogs`	 	[]
 select count(*) as aggregate from `lara_categories`	 	[]  	
 ----------------------------------------------
 
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+

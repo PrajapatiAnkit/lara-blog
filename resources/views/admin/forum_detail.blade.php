@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 @section('title','Forum detail')
 @section('pageContent')
-    <main class="main-content bgc-grey-100">
+    <main class="main-content bgc-grey-100" xmlns="http://www.w3.org/1999/html">
         <div id="mainContent">
             <div class="container-fluid">
                 <div class="row">
@@ -15,7 +15,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title">{{$blog->blog_title}}</h5>
                                     <p class="card-text">{{$blog->blog_description}}</p>
-                                    <a href="#" class="btn btn-info btn-sm">Like <i class="fa  fa-thumbs-o-up"></i></a>
+
+                                    <a href="javaScript:void(0)" style="color: {{in_array(Auth::id(),explode(',',$blog->liked_by_users))?'red':''}}" id="likeBtn{{$blog->id}}" onclick="doLikeDislike('{{$blog->id}}','like');"><i class="fa fa-thumbs-o-up"  style="font-size: 20px;" ></i><span id="likeCountLabel{{$blog->id}}">{{$blog->like_count}}</span></a>
+                                    <a href="javaScript:void(0)" style="color: {{in_array(Auth::id(),explode(',',$blog->disliked_by_users))?'red':''}}" id="dislikeBtn{{$blog->id}}" onclick="doLikeDislike('{{$blog->id}}','dislike');"><i class="fa fa-thumbs-o-down"  style="font-size: 20px;"><span id="dislikeCountLabel{{$blog->id}}">{{$blog->dislike_count}}</span></i></a>
+                                    <a href="javaScript:void(0)"> <i class="fa fa-commenting" style="font-size: 20px;"></i> <span id="commentCountLabel">{{$blog->comment_count}}</span></a>
+
                                 </div>
                             </div>
                         </div>

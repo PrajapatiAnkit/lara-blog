@@ -26,8 +26,14 @@ class ValidationRequestClass extends FormRequest
      */
     public function rules()
     {
+        /**
+         * Applies the vaidation rules according to action being performed
+         */
           if ($this->input('validationRule') == 'addBlog'){
 
+              /**
+               * if we are adding new blog these validation rules are applied
+               */
               $validationsRules = [
                   'blogTitle' => 'required',
                   'blogCategory' => 'required',
@@ -36,6 +42,10 @@ class ValidationRequestClass extends FormRequest
               ];
           }
          else if ($this->input('validationRule') == 'adminLogin'){
+
+             /**
+              * if user logins these validation rules are applied
+              */
                 $validationsRules =  [
                 'userName' => 'required',
                 'userPassword' => 'required',
@@ -43,6 +53,10 @@ class ValidationRequestClass extends FormRequest
           }
 
        else if ($this->input('validationRule') == 'addCategory'){
+
+           /**
+            * if we are adding new category these validation rules are applied
+            */
             $validationsRules =  [
                 'categoryName' => 'required',
             ];
@@ -54,6 +68,10 @@ class ValidationRequestClass extends FormRequest
     }
 
 
+    /**
+     * @todo customises the error messages
+     * @return array
+     */
     public function messages()
     {
         return [

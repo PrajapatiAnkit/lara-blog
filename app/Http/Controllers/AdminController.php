@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Admin;
 use App\Blog;
 use App\Categories;
+use App\Http\Requests\ProfileUpdateRequest;
 use App\Http\Requests\ValidationRequestClass;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -139,6 +141,23 @@ class AdminController extends Controller
            }
 
         }
+    }
+
+    public function showProfile()
+    {
+        $profile = Admin::find(Auth::id());
+        return view('admin.profile',['profileData' => $profile]);
+    }
+
+    public function updateProfile(ProfileUpdateRequest $request)
+    {
+        $profileUpdate = Admin::updateProfile($request);
+        if ($profileUpdate){
+            $messages = ['success'=>'Profile updated'];
+        }else{
+            $messages = ['error'=>'Error'];
+        }
+        return redirect()->route('showProfile')->with($messages);
     }
 
 

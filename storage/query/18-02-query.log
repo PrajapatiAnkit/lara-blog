@@ -1,0 +1,2853 @@
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 04:45:03","2020-02-18 04:45:03"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["6",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["nice !","6",1,"2020-02-18 04:53:43","2020-02-18 04:53:43"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["6",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["4353545","6",1,"2020-02-18 04:53:55","2020-02-18 04:53:55"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["6",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_categories` (`category_name`, `updated_at`, `created_at`) values (?, ?, ?)	 	["pravin","2020-02-18 04:55:21","2020-02-18 04:55:21"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories` where `id` = ? limit 1	 	["6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 04:56:29","2020-02-18 04:56:29"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["dfsfffdf","1",1,"2020-02-18 04:57:17","2020-02-18 04:57:17"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 05:36:10","2020-02-18 05:36:10"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 05:51:05","2020-02-18 05:51:05"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["4",1,1,"2020-02-18 05:58:49","2020-02-18 05:58:49"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["4",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["4",1,1,"2020-02-18 05:58:58","2020-02-18 05:58:58"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["4",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["3",1,1,"2020-02-18 05:59:03","2020-02-18 05:59:03"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["3",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 05:59:55","2020-02-18 05:59:55"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:00:22","2020-02-18 06:00:22"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:06:25","2020-02-18 06:06:25"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:07:42","2020-02-18 06:07:42"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:15:36","2020-02-18 06:15:36"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ? and `added_by` = ?)	 	["[\"\"],1","2020-02-18 06:15:36","1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:16:19","2020-02-18 06:16:19"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:16:32","2020-02-18 06:16:32"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:18:55","2020-02-18 06:18:55"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:19:15","2020-02-18 06:19:15"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:19:26","2020-02-18 06:19:26"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ? and `added_by` = ?)	 	["[{\"liked_by_users\":\"\"}],1","2020-02-18 06:19:26","1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:20:52","2020-02-18 06:20:52"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:21:07","2020-02-18 06:21:07"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:21:48","2020-02-18 06:21:48"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:22:11","2020-02-18 06:22:11"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:23:22","2020-02-18 06:23:22"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:23:35","2020-02-18 06:23:35"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:24:49","2020-02-18 06:24:49"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:26:20","2020-02-18 06:26:20"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:26:47","2020-02-18 06:26:47"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:27:35","2020-02-18 06:27:35"]  	
+----------------------------------------------
+
+select * from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:28:24","2020-02-18 06:28:24"]  	
+----------------------------------------------
+
+select * from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:28:55","2020-02-18 06:28:55"]  	
+----------------------------------------------
+
+select * from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:29:48","2020-02-18 06:29:48"]  	
+----------------------------------------------
+
+select * from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:30:07","2020-02-18 06:30:07"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?)	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:31:00","2020-02-18 06:31:00"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:31:18","2020-02-18 06:31:18"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:33:39","2020-02-18 06:33:39"]  	
+----------------------------------------------
+
+select * from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:34:08","2020-02-18 06:34:08"]  	
+----------------------------------------------
+
+select * from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:34:23","2020-02-18 06:34:23"]  	
+----------------------------------------------
+
+select * from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["3",1,1,"2020-02-18 06:34:42","2020-02-18 06:34:42"]  	
+----------------------------------------------
+
+select * from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["3",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["4",1,1,"2020-02-18 06:35:27","2020-02-18 06:35:27"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["4",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",1,1,"2020-02-18 06:35:59","2020-02-18 06:35:59"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["1",1]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ? and `added_by` = ?)	 	["1","2020-02-18 06:35:59","1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["2",1,1,"2020-02-18 06:36:15","2020-02-18 06:36:15"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["2",1]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ? and `added_by` = ?)	 	["1","2020-02-18 06:36:15","2",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit2"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",2,1,"2020-02-18 06:37:34","2020-02-18 06:37:34"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["1",2]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",2,1,"2020-02-18 06:37:51","2020-02-18 06:37:51"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ? and `added_by` = ?) limit 1	 	["1",2]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",2,1,"2020-02-18 06:39:24","2020-02-18 06:39:24"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["1"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ? and `added_by` = ?)	 	["1,2","2020-02-18 06:39:24","1",2]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",2,1,"2020-02-18 06:40:19","2020-02-18 06:40:19"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["1",2,1,"2020-02-18 06:41:19","2020-02-18 06:41:19"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["1"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	["1,2","2020-02-18 06:41:19","1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["3",2,1,"2020-02-18 06:41:34","2020-02-18 06:41:34"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["3"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	["2","2020-02-18 06:41:34","3"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",2,1,"2020-02-18 06:42:23","2020-02-18 06:42:23"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	["2","2020-02-18 06:42:23","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["5",2,1,"2020-02-18 06:44:12","2020-02-18 06:44:12"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["5"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	["2","2020-02-18 06:44:12","5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,1,"2020-02-18 06:47:00","2020-02-18 06:47:00"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	["2,1","2020-02-18 06:47:00","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["5",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["5",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["1",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["5",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["5",1,1,"2020-02-18 06:50:00","2020-02-18 06:50:00"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["5"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	["2,1","2020-02-18 06:50:00","5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["5",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["5",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["wow !","5",1,"2020-02-18 06:50:43","2020-02-18 06:50:43"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["5",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["jpg","2020-02-18 07:47:04",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `name` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["Ankit kumar2","2020-02-18 07:47:24",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["IMG_20191213_222152_BURST1_20191213_222618147.jpg","2020-02-18 07:54:15",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `email` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["ankit2@gmail.com","2020-02-18 07:54:32",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["user1.png","2020-02-18 07:56:33",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["IMG_20191213_222349_20191213_222618423.jpg","2020-02-18 07:57:19",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["user1.png","2020-02-18 07:58:08",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["IMG_20191213_222152_BURST1_20191213_222618147.jpg","2020-02-18 07:59:33",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["IMG_20191213_222219_20191213_222619062.jpg","2020-02-18 08:00:33",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["user1.png","2020-02-18 08:01:14",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["4"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["4",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_categories` (`category_name`, `updated_at`, `created_at`) values (?, ?, ?)	 	["gvbvbvbb","2020-02-18 09:16:57","2020-02-18 09:16:57"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_blogs` (`blog_title`, `category_id`, `blog_description`, `added_by`, `blog_images`, `like_status`, `liked_by_users`, `blog_slug`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)	 	["How to make hybrid applicationsfdgfdgfdgg","7","ghfdgfggggfggf",1,"",0,"","how-to-make-hybrid-applicationsfdgfdgfdgg","2020-02-18 09:20:33","2020-02-18 09:20:33"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories` where `id` = ? limit 1	 	["1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories` where `id` = ? limit 1	 	["1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories` where `id` = ? limit 1	 	["1"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories` where `lara_categories`.`id` = ? limit 1	 	["1"]  	
+----------------------------------------------
+
+update `lara_categories` set `category_name` = ?, `lara_categories`.`updated_at` = ? where `id` = ?	 	["PHP22","2020-02-18 09:23:12",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories` where `lara_categories`.`id` = ? limit 1	 	["7"]  	
+----------------------------------------------
+
+delete from `lara_categories` where `id` = ?	 	[7]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_blogs` (`blog_title`, `category_id`, `blog_description`, `added_by`, `blog_images`, `like_status`, `liked_by_users`, `blog_slug`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)	 	["how to make web apps","4","dfgdgdgdf gdggfgfg",1,"1874440297.jpg",0,"","how-to-make-web-apps","2020-02-18 09:24:51","2020-02-18 09:24:51"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6, 8) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_comments` where `lara_comments`.`blog_id` in (1, 2, 3, 4, 5, 6, 8) order by `id` desc limit 2	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["8",1,1,"2020-02-18 09:28:55","2020-02-18 09:28:55"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["8"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	["1","2020-02-18 09:28:55","8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["oooo","8",1,"2020-02-18 09:36:50","2020-02-18 09:36:50"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["8"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["8",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["user12.png","2020-02-18 09:41:34",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+SHOW FULL TABLES WHERE table_type = 'BASE TABLE'	 	[]  	
+----------------------------------------------
+
+SET FOREIGN_KEY_CHECKS=0;	 	[]  	
+----------------------------------------------
+
+drop table `lara_blogs`,`lara_categories`,`lara_comments`,`lara_likes`,`lara_migrations`,`lara_users`	 	[]  	
+----------------------------------------------
+
+SET FOREIGN_KEY_CHECKS=1;	 	[]  	
+----------------------------------------------
+
+select * from information_schema.tables where table_schema = ? and table_name = ? and table_type = 'BASE TABLE'	 	["lara_blog","lara_migrations"]  	
+----------------------------------------------
+
+create table `lara_migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+select `migration` from `lara_migrations` order by `batch` asc, `migration` asc	 	[]  	
+----------------------------------------------
+
+select max(`batch`) as aggregate from `lara_migrations`	 	[]  	
+----------------------------------------------
+
+create table `lara_users` (`id` bigint unsigned not null auto_increment primary key, `username` varchar(100) not null, `password` varchar(100) not null, `email` varchar(100) not null, `contact` varchar(100) not null, `profile` varchar(100) not null, `user_type` int not null comment '1=>Admin,2=>User', `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_040110_create_users_table",1]  	
+----------------------------------------------
+
+alter table `lara_users` add `address` text not null	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_055346_create_users_table_alter",1]  	
+----------------------------------------------
+
+create table `lara_blogs` (`id` bigint unsigned not null auto_increment primary key, `blog_title` varchar(255) not null, `category_id` varchar(255) not null, `blog_description` varchar(255) not null, `blog_images` varchar(255) not null, `added_by` int not null, `blog_slug` varchar(255) not null, `like_status` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_105128_create_blog_table",1]  	
+----------------------------------------------
+
+create table `lara_categories` (`id` bigint unsigned not null auto_increment primary key, `category_name` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_115419_create_categories_table",1]  	
+----------------------------------------------
+
+create table `lara_comments` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `comment` varchar(255) not null, `userId` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_14_135344_create_comment_table",1]  	
+----------------------------------------------
+
+create table `lara_likes` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `user_id` int not null, `like_value` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_17_134436_create_likes_table",1]  	
+----------------------------------------------
+
+SHOW FULL TABLES WHERE table_type = 'BASE TABLE'	 	[]  	
+----------------------------------------------
+
+SET FOREIGN_KEY_CHECKS=0;	 	[]  	
+----------------------------------------------
+
+drop table `lara_blogs`,`lara_categories`,`lara_comments`,`lara_likes`,`lara_migrations`,`lara_users`	 	[]  	
+----------------------------------------------
+
+SET FOREIGN_KEY_CHECKS=1;	 	[]  	
+----------------------------------------------
+
+select * from information_schema.tables where table_schema = ? and table_name = ? and table_type = 'BASE TABLE'	 	["lara_blog","lara_migrations"]  	
+----------------------------------------------
+
+create table `lara_migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+select `migration` from `lara_migrations` order by `batch` asc, `migration` asc	 	[]  	
+----------------------------------------------
+
+select max(`batch`) as aggregate from `lara_migrations`	 	[]  	
+----------------------------------------------
+
+create table `lara_users` (`id` bigint unsigned not null auto_increment primary key, `username` varchar(100) not null, `password` varchar(100) not null, `email` varchar(100) not null, `contact` varchar(100) not null, `profile` varchar(100) not null, `user_type` int not null comment '1=>Admin,2=>User', `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_040110_create_users_table",1]  	
+----------------------------------------------
+
+alter table `lara_users` add `address` text not null	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_055346_create_users_table_alter",1]  	
+----------------------------------------------
+
+create table `lara_blogs` (`id` bigint unsigned not null auto_increment primary key, `blog_title` varchar(255) not null, `category_id` varchar(255) not null, `blog_description` varchar(255) not null, `blog_images` varchar(255) not null, `added_by` int not null, `blog_slug` varchar(255) not null, `like_status` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_105128_create_blog_table",1]  	
+----------------------------------------------
+
+create table `lara_categories` (`id` bigint unsigned not null auto_increment primary key, `category_name` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_115419_create_categories_table",1]  	
+----------------------------------------------
+
+create table `lara_comments` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `comment` varchar(255) not null, `userId` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_14_135344_create_comment_table",1]  	
+----------------------------------------------
+
+create table `lara_likes` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `user_id` int not null, `like_value` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_17_134436_create_likes_table",1]  	
+----------------------------------------------
+
+select * from information_schema.tables where table_schema = ? and table_name = ? and table_type = 'BASE TABLE'	 	["lara_blog","lara_migrations"]  	
+----------------------------------------------
+
+create table `lara_migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+select `migration` from `lara_migrations` order by `batch` asc, `migration` asc	 	[]  	
+----------------------------------------------
+
+select max(`batch`) as aggregate from `lara_migrations`	 	[]  	
+----------------------------------------------
+
+create table `lara_users` (`id` bigint unsigned not null auto_increment primary key, `username` varchar(100) not null, `password` varchar(100) not null, `email` varchar(100) not null, `contact` varchar(100) not null, `profile` varchar(100) not null, `user_type` int not null comment '1=>Admin,2=>User', `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_040110_create_users_table",1]  	
+----------------------------------------------
+
+alter table `lara_users` add `address` text not null	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_055346_create_users_table_alter",1]  	
+----------------------------------------------
+
+create table `lara_blogs` (`id` bigint unsigned not null auto_increment primary key, `blog_title` varchar(255) not null, `category_id` varchar(255) not null, `blog_description` varchar(255) not null, `blog_images` varchar(255) not null, `added_by` int not null, `blog_slug` varchar(255) not null, `like_status` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_105128_create_blog_table",1]  	
+----------------------------------------------
+
+create table `lara_categories` (`id` bigint unsigned not null auto_increment primary key, `category_name` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_115419_create_categories_table",1]  	
+----------------------------------------------
+
+create table `lara_comments` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `comment` varchar(255) not null, `userId` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_14_135344_create_comment_table",1]  	
+----------------------------------------------
+
+create table `lara_likes` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `user_id` int not null, `like_value` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_17_134436_create_likes_table",1]  	
+----------------------------------------------
+
+SHOW FULL TABLES WHERE table_type = 'BASE TABLE'	 	[]  	
+----------------------------------------------
+
+SET FOREIGN_KEY_CHECKS=0;	 	[]  	
+----------------------------------------------
+
+drop table `lara_blogs`,`lara_categories`,`lara_comments`,`lara_likes`,`lara_migrations`,`lara_users`	 	[]  	
+----------------------------------------------
+
+SET FOREIGN_KEY_CHECKS=1;	 	[]  	
+----------------------------------------------
+
+select * from information_schema.tables where table_schema = ? and table_name = ? and table_type = 'BASE TABLE'	 	["lara_blog","lara_migrations"]  	
+----------------------------------------------
+
+create table `lara_migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+select `migration` from `lara_migrations` order by `batch` asc, `migration` asc	 	[]  	
+----------------------------------------------
+
+select max(`batch`) as aggregate from `lara_migrations`	 	[]  	
+----------------------------------------------
+
+create table `lara_users` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(100) not null, `username` varchar(100) not null, `password` varchar(100) not null, `email` varchar(100) not null, `contact` varchar(100) not null, `profile` varchar(100) not null, `user_type` int not null comment '1=>Admin,2=>User', `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_040110_create_users_table",1]  	
+----------------------------------------------
+
+alter table `lara_users` add `address` text not null	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_055346_create_users_table_alter",1]  	
+----------------------------------------------
+
+create table `lara_blogs` (`id` bigint unsigned not null auto_increment primary key, `blog_title` varchar(255) not null, `category_id` varchar(255) not null, `blog_description` varchar(255) not null, `blog_images` varchar(255) not null, `added_by` int not null, `blog_slug` varchar(255) not null, `like_status` int not null, `liked_by_users` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_105128_create_blog_table",1]  	
+----------------------------------------------
+
+create table `lara_categories` (`id` bigint unsigned not null auto_increment primary key, `category_name` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_115419_create_categories_table",1]  	
+----------------------------------------------
+
+create table `lara_comments` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `comment` varchar(255) not null, `userId` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_14_135344_create_comment_table",1]  	
+----------------------------------------------
+
+create table `lara_likes` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `user_id` int not null, `like_value` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_17_134436_create_likes_table",1]  	
+----------------------------------------------
+
+insert into `lara_users` (`name`, `username`, `password`, `email`, `contact`, `profile`, `user_type`, `address`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)	 	["Ankit kumar","ankit","$2y$10$cgUScVAhenCHbnomovnsBuPk\/9wL7jCsh1ynM6cL09wCVoN18RY2.","ankit@gmail.com","7905266028","",1,"","2020-02-18 09:48:04","2020-02-18 09:48:04"]  	
+----------------------------------------------
+
+insert into `lara_blogs` (`added_by`, `blog_description`, `blog_images`, `blog_slug`, `blog_title`, `category_id`, `created_at`, `like_status`, `liked_by_users`, `updated_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)	 	[5,"This is a java description","","what-is-java","what is java",1,"2020-02-18 09:48:04",0,"","2020-02-18 09:48:04",5,"This is a android description","","what-is-android","what is android",2,"2020-02-18 09:48:04",0,"","2020-02-18 09:48:04",5,"This is a ionic description","","what-is-ionic","what is ionic",3,"2020-02-18 09:48:04",0,"","2020-02-18 09:48:04",5,"This is a github description","","what-is-github","What is github",4,"2020-02-18 09:48:04",0,"","2020-02-18 09:48:04",5,"This is a gitlab description","","what-is-gitlab","what is gitlab",5,"2020-02-18 09:48:04",0,"","2020-02-18 09:48:04"]  	
+----------------------------------------------
+
+insert into `lara_comments` (`blog_id`, `comment`, `created_at`, `updated_at`, `userId`) values (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?)	 	[1,"this is a comment 14","2020-02-18 09:48:04","2020-02-18 09:48:04",5,2,"this is a comment 15","2020-02-18 09:48:04","2020-02-18 09:48:04",5,3,"this is a comment 16","2020-02-18 09:48:04","2020-02-18 09:48:04",5,4,"this is a comment 17","2020-02-18 09:48:04","2020-02-18 09:48:04",5,5,"this is a comment 18","2020-02-18 09:48:04","2020-02-18 09:48:04",5]  	
+----------------------------------------------
+
+insert into `lara_categories` (`category_name`, `created_at`, `updated_at`) values (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?)	 	["PHP","2020-02-18 09:48:04","2020-02-18 09:48:04","JAVa","2020-02-18 09:48:04","2020-02-18 09:48:04","Android","2020-02-18 09:48:04","2020-02-18 09:48:04","Ionic","2020-02-18 09:48:04","2020-02-18 09:48:04","Github","2020-02-18 09:48:04","2020-02-18 09:48:04"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+SHOW FULL TABLES WHERE table_type = 'BASE TABLE'	 	[]  	
+----------------------------------------------
+
+SET FOREIGN_KEY_CHECKS=0;	 	[]  	
+----------------------------------------------
+
+drop table `lara_blogs`,`lara_categories`,`lara_comments`,`lara_likes`,`lara_migrations`,`lara_users`	 	[]  	
+----------------------------------------------
+
+SET FOREIGN_KEY_CHECKS=1;	 	[]  	
+----------------------------------------------
+
+select * from information_schema.tables where table_schema = ? and table_name = ? and table_type = 'BASE TABLE'	 	["lara_blog","lara_migrations"]  	
+----------------------------------------------
+
+create table `lara_migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+select `migration` from `lara_migrations` order by `batch` asc, `migration` asc	 	[]  	
+----------------------------------------------
+
+select max(`batch`) as aggregate from `lara_migrations`	 	[]  	
+----------------------------------------------
+
+create table `lara_users` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(100) not null, `username` varchar(100) not null, `password` varchar(100) not null, `email` varchar(100) not null, `contact` varchar(100) not null, `profile` varchar(100) not null, `user_type` int not null comment '1=>Admin,2=>User', `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_040110_create_users_table",1]  	
+----------------------------------------------
+
+alter table `lara_users` add `address` text not null	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_12_055346_create_users_table_alter",1]  	
+----------------------------------------------
+
+create table `lara_blogs` (`id` bigint unsigned not null auto_increment primary key, `blog_title` varchar(255) not null, `category_id` varchar(255) not null, `blog_description` varchar(255) not null, `blog_images` varchar(255) not null, `added_by` int not null, `blog_slug` varchar(255) not null, `like_status` int not null, `liked_by_users` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_105128_create_blog_table",1]  	
+----------------------------------------------
+
+create table `lara_categories` (`id` bigint unsigned not null auto_increment primary key, `category_name` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_13_115419_create_categories_table",1]  	
+----------------------------------------------
+
+create table `lara_comments` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `comment` varchar(255) not null, `userId` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_14_135344_create_comment_table",1]  	
+----------------------------------------------
+
+create table `lara_likes` (`id` bigint unsigned not null auto_increment primary key, `blog_id` int not null, `user_id` int not null, `like_value` int not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci'	 	[]  	
+----------------------------------------------
+
+insert into `lara_migrations` (`migration`, `batch`) values (?, ?)	 	["2020_02_17_134436_create_likes_table",1]  	
+----------------------------------------------
+
+insert into `lara_users` (`name`, `username`, `password`, `email`, `contact`, `profile`, `user_type`, `address`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)	 	["Ankit kumar","ankit","$2y$10$ABD\/.RCbYlYidxY2UxqSeOy9yUvBEid28JNubm822.8grbjnNaiNW","ankit@gmail.com","7905266028","",1,"","2020-02-18 09:50:14","2020-02-18 09:50:14"]  	
+----------------------------------------------
+
+insert into `lara_blogs` (`added_by`, `blog_description`, `blog_images`, `blog_slug`, `blog_title`, `category_id`, `created_at`, `like_status`, `liked_by_users`, `updated_at`) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)	 	[1,"This is a java description","","what-is-java","what is java",1,"2020-02-18 09:50:14",0,"","2020-02-18 09:50:14",1,"This is a android description","","what-is-android","what is android",2,"2020-02-18 09:50:14",0,"","2020-02-18 09:50:14",1,"This is a ionic description","","what-is-ionic","what is ionic",3,"2020-02-18 09:50:14",0,"","2020-02-18 09:50:14",1,"This is a github description","","what-is-github","What is github",4,"2020-02-18 09:50:14",0,"","2020-02-18 09:50:14",1,"This is a gitlab description","","what-is-gitlab","what is gitlab",5,"2020-02-18 09:50:14",0,"","2020-02-18 09:50:14"]  	
+----------------------------------------------
+
+insert into `lara_comments` (`blog_id`, `comment`, `created_at`, `updated_at`, `userId`) values (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?), (?, ?, ?, ?, ?)	 	[1,"this is a comment 14","2020-02-18 09:50:14","2020-02-18 09:50:14",5,2,"this is a comment 15","2020-02-18 09:50:14","2020-02-18 09:50:14",5,3,"this is a comment 16","2020-02-18 09:50:14","2020-02-18 09:50:14",5,4,"this is a comment 17","2020-02-18 09:50:14","2020-02-18 09:50:14",5,5,"this is a comment 18","2020-02-18 09:50:14","2020-02-18 09:50:14",5]  	
+----------------------------------------------
+
+insert into `lara_categories` (`category_name`, `created_at`, `updated_at`) values (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?), (?, ?, ?)	 	["PHP","2020-02-18 09:50:14","2020-02-18 09:50:14","JAVa","2020-02-18 09:50:14","2020-02-18 09:50:14","Android","2020-02-18 09:50:14","2020-02-18 09:50:14","Ionic","2020-02-18 09:50:14","2020-02-18 09:50:14","Github","2020-02-18 09:50:14","2020-02-18 09:50:14"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_likes` (`blog_id`, `user_id`, `like_value`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,1,"2020-02-18 09:52:19","2020-02-18 09:52:19"]  	
+----------------------------------------------
+
+select `liked_by_users` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+update `lara_blogs` set `liked_by_users` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	["1","2020-02-18 09:52:19","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["6",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["wow !","6",1,"2020-02-18 09:52:30","2020-02-18 09:52:30"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["6",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+update `lara_users` set `profile` = ?, `lara_users`.`updated_at` = ? where `id` = ?	 	["user12.png","2020-02-18 09:52:43",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["6",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["33","6",1,"2020-02-18 10:51:09","2020-02-18 10:51:09"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["6",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["4"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["4",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["wow!","4",1,"2020-02-18 10:56:16","2020-02-18 10:56:16"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["4",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ? and `userId` = ?) order by `id` desc	 	["6",1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `lara_users`.`id` = ? limit 1	 	[1]  	
+----------------------------------------------
+

@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Blog;
 use App\Comment;
+use App\DisLike;
 use App\Like;
+use DemeterChain\B;
 use DemeterChain\C;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -47,6 +49,10 @@ class ForumController extends Controller
     public function saveComment(Request $request)
     {
         $userId = Auth::id();
+
+        $newCommentsCount  = Blog::getCommentCount($request->input('blogId'))+1;
+        $updateCommentCount = Blog::updateNewCommentCount($request->input('blogId'),$newCommentsCount);
+
         $save = Comment::saveComment($request,$userId);
         /**
          * this function getAllComments fetches all the latest comments of particular blog
@@ -56,7 +62,7 @@ class ForumController extends Controller
             /**
              * if saved it returns all the latest comments to json
              */
-            return response()->json(['saved'=>1,'comments'=>$comments]);
+            return response()->json(['saved'=>1,'comments'=>$comments,'commentCount'=>$newCommentsCount]);
         }else{
             /**
              * it shows any error occurred
@@ -84,9 +90,51 @@ class ForumController extends Controller
 
     public function doLike(Request $request)
     {
-        $save = Like::saveLike($request,Auth::id());
-        if ($save){
-            return response()->json(['liked'=>'yes']);
+
+        $action = $request->input('action');
+        $checkLiked = Like::checkIfUserLiked($request->input('blogId'),Auth::id());
+        $checkDisLiked = DisLike::checkIfUserDisLiked($request->input('blogId'),Auth::id());
+
+        $likeCount = Blog::getLikeCountByBlog($request->input('blogId'));
+        $disLikeCount = Blog::getDislikeCountByBlog($request->input('blogId'));
+
+        if ($action == 'like'){
+            if ($checkLiked){
+                $again = 'againLike';
+                $likeCount = (($likeCount!=0?$likeCount-1:$likeCount));
+                Like::removeLike($request->input('blogId'),Auth::id());
+            }else{
+                $again = 'firstLike';
+                $likeCount = $likeCount+1;
+                $disLikeCount = (($disLikeCount!=0?$disLikeCount-1:$disLikeCount));
+                Like::saveLike($request,Auth::id());
+            }
+
+        }else if ($action == 'dislike'){
+            if ($checkDisLiked){
+                $again = 'againDislike';
+                $disLikeCount = (($likeCount!=0?$likeCount-1:$likeCount));
+                DisLike::removeDisLike($request->input('blogId'),Auth::id());
+            }else{
+                $again = 'firstDislike';
+                $disLikeCount = $disLikeCount+1;
+                DisLike::saveDisLike($request->input('blogId'),Auth::id());
+            }
+        }
+
+      /* echo $likeCount.'<br/>';
+      echo $disLikeCount.'<br/>';
+      die();*/
+
+         $updateNewLiked = Blog::updateNewLikeDislikeUsers($request->input('blogId'),$likeCount,$disLikeCount,Auth::id(),$action);
+
+        if ($updateNewLiked){
+                return response()->json([
+                    'action'=>$action,
+                    'again' => $again,
+                    'likeCount'=>$likeCount,
+                    'disLikeCount'=>$disLikeCount
+                ]);
         }
     }
 }

@@ -17,13 +17,10 @@
                                         <div class="card-body">
                                             <h5 class="card-title"><a href="{{route('detail',['id'=> $blog->id,'slug'=>$blog->blog_slug])}}">{{$blog->blog_title}}</a> </h5>
                                             <p class="card-text">{{$blog->blog_description}}</p>
-                                                <button type="button" id="likeBtn{{$blog->id}}" onclick="likesTheBlog('{{$blog->id}}');"  {{$blog->like_status == 1 ?'disabled="disabled"':''}} class="btn btn-success btn-sm">Like <i class="fa  fa-thumbs-o-up"></i><i class="fa fa-spinner fa-spin" style="display: none" id="likeLoadingBtn{{$blog->id}}"></i></button>
-                                            <a href="#" class="btn btn-info btn-sm">Comment <i class="fa fa-commenting"></i></a>
-                                            <ul class="list-group list-group-flush" id="commentsData" style="margin-top: 20px;">
-                                                @foreach($blog->comments as $comment)
-                                                    <li class="list-group-item"><img src="http://127.0.0.1:8000/static/adminator/randomuser.me/api/portraits/men/10.jpg" width="30" style="border-radius: 50%;">{{$comment->comment}}</li>
-                                                @endforeach
-                                            </ul>
+                                            <a href="javaScript:void(0)" style="color: {{in_array(Auth::id(),explode(',',$blog->liked_by_users))?'red':''}}" id="likeBtn{{$blog->id}}" onclick="doLikeDislike('{{$blog->id}}','like');"><i class="fa fa-thumbs-o-up"  style="font-size: 20px;" ></i><span id="likeCountLabel{{$blog->id}}">{{$blog->like_count}}</span></a>
+                                            <a href="javaScript:void(0)" style="color: {{in_array(Auth::id(),explode(',',$blog->disliked_by_users))?'red':''}}" id="dislikeBtn{{$blog->id}}" onclick="doLikeDislike('{{$blog->id}}','dislike');"><i class="fa fa-thumbs-o-down"  style="font-size: 20px;"><span id="dislikeCountLabel{{$blog->id}}">{{$blog->dislike_count}}</span></i></a>
+                                            <a href="{{route('detail',['id'=> $blog->id,'slug'=>$blog->blog_slug])}}"> <i class="fa fa-commenting" style="font-size: 20px;"></i> {{$blog->comment_count}}</a>
+
                                         </div><hr/>
                                     @endforeach
                                 @endif

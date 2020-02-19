@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Categories;
 use App\Http\Requests\BlogRequest;
+use App\Http\Requests\CategoryRequest;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -32,7 +33,7 @@ class CategoryController extends Controller
      * @param CategoryController $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function updateCategory(CategoryController $request)
+    public function updateCategory(CategoryRequest $request)
     {
         $validation = $request->validated();
         $category = Categories::find($request->input('categoryId'));
