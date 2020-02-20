@@ -27,4 +27,11 @@
     font-size: 15px;
 }
 
+.delete-icon{
+    color: red;
+}
+.spaces-near-button{
+    margin: 5px;
+}
+
 

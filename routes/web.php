@@ -66,6 +66,7 @@ Route::post('/admin/updateBlog','BlogController@updateBlog')->name('updateBlog')
 Route::get('/admin/forum','ForumController@index')->name('forum')->middleware('auth');;
 Route::get('/admin/forum-detail/{id}/{slug}','ForumController@detail')->name('detail')->middleware('auth');;
 Route::post('/admin/saveComment','ForumController@saveComment')->name('saveComment')->middleware('auth');;
+Route::post('/admin/deleteComment','ForumController@deleteComment')->name('deleteComment')->middleware('auth');;
 Route::post('/admin/getCommentsById','ForumController@getCommentsById')->middleware('auth');;
-Route::post('/admin/doLike','ForumController@doLike')->middleware('auth');;
+Route::post('/admin/doLikeDislike','ForumController@doLikeDislike')->middleware('auth');;
 

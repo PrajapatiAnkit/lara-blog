@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use phpDocumentor\Reflection\Types\Self_;
 
 class Comment extends Model
@@ -28,12 +29,20 @@ class Comment extends Model
     public static function saveComment($request,$userId)
    {
        $blogId = $request->input('blogId');
-       $saveQuery = Self::create([
-                'comment' => $request->input('commentText'),
-                'blog_id' => $blogId,
-                'userId' => $userId,
-            ]
-        );
+       $editCommentId = $request->input('editCommentId');
+       if ($editCommentId == ''){
+           $saveQuery = Self::create([
+                   'comment' => $request->input('commentText'),
+                   'blog_id' => $blogId,
+                   'userId' => $userId,
+               ]
+           );
+       }else{
+           $query = Self::where(['id'=>$editCommentId,'userId'=>$userId])
+           ->update(['comment'=>$request->input('commentText')]);
+           return $query;
+       }
+
         return $saveQuery;
    }
 
@@ -45,7 +54,14 @@ class Comment extends Model
      */
    public static function getAllComments($userId,$blogId)
    {
-      $query = Self::where(['blog_id'=>$blogId,'userId'=>$userId])->orderBy('id','DESC')->get();
+      $query = Self::where(['blog_id'=>$blogId])->orderBy('id','DESC')->get();
+       return $query;
+
+   }
+
+   public static function deleteComment($userId,$commentId,$blogId)
+   {
+       $query = Self::where(['id'=>$commentId,'userId'=>$userId,'blog_id'=>$blogId])->delete();
        return $query;
    }
 

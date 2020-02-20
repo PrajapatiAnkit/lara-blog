@@ -23,7 +23,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                        <div class="bgc-white bd bdrs-3 p-20 mB-20" id="commentSection">
                             <h4 class="c-grey-900 mB-20">Write Comment </h4>
                             <form id="commentForm" action="{{route('saveComment')}}">
                                 <input type="hidden" name="_token" id="_token" value="{{csrf_token()}}">
@@ -31,6 +31,7 @@
                                     <textarea class="form-control" id="commentText" name="commentText" placeholder="Write comment"></textarea>
                                     <div class="error-messages" id="commentTextError">commentTextError</div>
                                 </div>
+                                <input type="hidden" name="editCommentId" id="editCommentId" value="">
                                 <input type="hidden" name="blogId" id="blogId" value="{{ Request::segment(3)}}">
                                <button type="submit" name="writeCommentBtn" id="writeCommentBtn" class="btn btn-success btn-sm" style="float: right">Comment</button><br/>
                             </form>
@@ -45,6 +46,7 @@
             </div>
         </div>
     </main>
+    <input type="hidden" name="myUserId" id="myUserId" value="{{Auth::id()}}">
 
     <script>
         window.onload = function () {

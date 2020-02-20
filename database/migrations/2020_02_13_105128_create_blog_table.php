@@ -24,7 +24,6 @@ class CreateBlogTable extends Migration
             $table->integer('like_count');
             $table->integer('dislike_count');
             $table->integer('comment_count');
-            $table->string('liked_by_users','255');
             $table->timestamps();
         });
     }

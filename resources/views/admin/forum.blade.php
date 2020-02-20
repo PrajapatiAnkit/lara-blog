@@ -17,8 +17,8 @@
                                         <div class="card-body">
                                             <h5 class="card-title"><a href="{{route('detail',['id'=> $blog->id,'slug'=>$blog->blog_slug])}}">{{$blog->blog_title}}</a> </h5>
                                             <p class="card-text">{{$blog->blog_description}}</p>
-                                            <a href="javaScript:void(0)" style="color: {{in_array(Auth::id(),explode(',',$blog->liked_by_users))?'red':''}}" id="likeBtn{{$blog->id}}" onclick="doLikeDislike('{{$blog->id}}','like');"><i class="fa fa-thumbs-o-up"  style="font-size: 20px;" ></i><span id="likeCountLabel{{$blog->id}}">{{$blog->like_count}}</span></a>
-                                            <a href="javaScript:void(0)" style="color: {{in_array(Auth::id(),explode(',',$blog->disliked_by_users))?'red':''}}" id="dislikeBtn{{$blog->id}}" onclick="doLikeDislike('{{$blog->id}}','dislike');"><i class="fa fa-thumbs-o-down"  style="font-size: 20px;"><span id="dislikeCountLabel{{$blog->id}}">{{$blog->dislike_count}}</span></i></a>
+                                            <a href="javaScript:void(0)" style="color:" id="likeBtn{{$blog->id}}" onclick="doLikeDislike('{{$blog->id}}','like');"><i class="fa fa-thumbs-o-up"  style="font-size: 20px;" ></i><span id="likeCountLabel{{$blog->id}}">{{$blog->like_count}}</span></a>
+                                            <a href="javaScript:void(0)" style="color:" id="dislikeBtn{{$blog->id}}" onclick="doLikeDislike('{{$blog->id}}','dislike');"><i class="fa fa-thumbs-o-down"  style="font-size: 20px;"><span id="dislikeCountLabel{{$blog->id}}">{{$blog->dislike_count}}</span></i></a>
                                             <a href="{{route('detail',['id'=> $blog->id,'slug'=>$blog->blog_slug])}}"> <i class="fa fa-commenting" style="font-size: 20px;"></i> {{$blog->comment_count}}</a>
 
                                         </div><hr/>

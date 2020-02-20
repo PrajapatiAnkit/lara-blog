@@ -194,15 +194,28 @@ $("form#commentForm").on('submit',function (e) {
     var commentText = $("#commentText").val();
     var blogId = $("#blogId").val();
     var _token = $("#_token").val();
+    var editCommentId = $("#editCommentId").val();
     var formAction = $("#commentForm").attr("action");
     if (commentText == ''){
         $("#commentTextError").show();
         $("#commentTextError").html("Please type something");
         $("#commentText").focus();
     }else {
-        $.post(formAction,{commentText:commentText,_token:_token,blogId:blogId},function (response) {
-            var commentsData = '';
-            $("#commentCountLabel").html(response.commentCount);
+        $.post(formAction,{
+            commentText:commentText,
+            _token:_token,
+            blogId:blogId,
+            editCommentId:editCommentId
+        },function (response) {
+
+            var commentCount = response.commentCount;
+            $("#commentCountLabel").html(commentCount);
+
+            $("form#commentForm").each(function () {
+                this.reset();
+            });
+         /*   var commentsData = '';
+
             for (var i=0; i<response.comments.length; i++) {
                 var commentItem = response.comments[i];
                 commentsData +='<li class="list-group-item"><img src="http://127.0.0.1:8000/static/adminator/randomuser.me/api/portraits/men/10.jpg" width="30" style="border-radius: 50%;">  '+commentItem.comment+'</li>\n';
@@ -210,20 +223,36 @@ $("form#commentForm").on('submit',function (e) {
             $("form#commentForm").each(function () {
                 this.reset();
             });
-            $("#commentsData").html(commentsData);
+            $("#commentsData").html(commentsData);*/
+            getCommentsById(blogId);
         });
     }
 });
 
 function getCommentsById(blogId) {
     var _token = $("#_token").val();
+    var myUserId = $("#myUserId").val();
     var commentsData = '';
+    var editDeleteStyle = '';
     $.post("/admin/getCommentsById",{blogId:blogId,_token:_token},function (response) {
-        //console.log(response.comments.length);
+        //console.log(response.userId);
+
         if (response.comments.length>0){
             for (var i=0; i<response.comments.length; i++) {
                 var commentItem = response.comments[i];
-                commentsData +='<li class="list-group-item"><img src="http://127.0.0.1:8000/static/adminator/randomuser.me/api/portraits/men/10.jpg" width="30" style="border-radius: 50%;">  '+commentItem.comment+'</li>\n';
+               // var commentId = response.comments[i];
+                var commentAuthor = commentItem.userId;
+               // console.log(commentAuthor);
+                if (commentAuthor == myUserId){
+                    editDeleteStyle = 'block';
+                }else{
+                    editDeleteStyle = 'none';
+                }
+                commentsData +='<li class="list-group-item">' +
+                    '<img src="http://127.0.0.1:8000/static/adminator/randomuser.me/api/portraits/men/10.jpg"' +
+                    ' width="30" style="border-radius: 50%;">  '+commentItem.comment+'' +
+                    '<a href="javaScript:void();" style="display:'+editDeleteStyle+'" onclick="deleteComment('+blogId+','+commentItem.id+')" class="pull-right spaces-near-button"><i class="fa fa-trash delete-icon"></i></a>' +
+                    '<a href="javaScript:void();" style="display:'+editDeleteStyle+'" onclick="editComment('+blogId+','+commentItem.id+',\''+commentItem.comment+'\')" class="pull-right spaces-near-button"><i class="fa fa-pencil"></i></a> </li>\n';
             }
 
         }else{
@@ -231,23 +260,38 @@ function getCommentsById(blogId) {
 
         }
         $("#commentsData").html(commentsData);
+        $("#editCommentId").val("");
+        $("#writeCommentBtn").html("comment");
     });
 }
 
-function likesTheBlog(blogId) {
-    var _token = $("#_token").val();
-    $.post("/admin/doLike",{blogId:blogId,_token:_token},function (response) {
-        if (response.liked == 'yes'){
-            $('#likeBtn'+blogId).attr('disabled','disabled');
-            $('#likeBtnLable'+blogId).html('liked');
-        }
-    });
+function editComment(blogId,commentId,commentMessage) {
+   $("#commentText").val(commentMessage);
+   $("#editCommentId").val(commentId);
+
+   $("#writeCommentBtn").html("Update Comment");
+    $('html, body').animate({
+        scrollTop: $(".card-body").offset().top
+    }, 1000);
 }
+
+function deleteComment(blogId,commentId) {
+    var _token = $("#_token").val();
+   if (confirm("Are you sure to delete your comment??")){
+       $.post("/admin/deleteComment",{blogId:blogId,_token:_token,commentId:commentId},function (response) {
+           if (response.deleted == '1'){
+               getCommentsById(blogId);
+           }
+       });
+   }
+}
+
+
 
 function doLikeDislike(blogId,action) {
 
     var _token = $("#_token").val();
-    $.post("/admin/doLike",{blogId:blogId,_token:_token,action:action},function (response) {
+    $.post("/admin/doLikeDislike",{blogId:blogId,_token:_token,action:action},function (response) {
         var actionPerformed = response.action;
         var again = response.again;
 
@@ -272,8 +316,5 @@ function doLikeDislike(blogId,action) {
 
 }
 
-function doDislike(blogId,dislikeCount) {
-
-}
 
 

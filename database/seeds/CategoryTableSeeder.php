@@ -20,7 +20,7 @@ class CategoryTableSeeder extends Seeder
                     'updated_at' => date('Y-m-d H:i:s'),
                 ],
                 [
-                    'category_name' => 'JAVa',
+                    'category_name' => 'JAVA',
                     'created_at' => date('Y-m-d H:i:s'),
                     'updated_at' => date('Y-m-d H:i:s'),
                 ],
