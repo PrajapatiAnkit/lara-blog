@@ -184,3 +184,612 @@ select count(*) as aggregate from `lara_blogs`	 	[]
 select count(*) as aggregate from `lara_categories`	 	[]  	
 ----------------------------------------------
 
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["pravin"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["5",2,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["5",2,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["5"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["5"]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["5",2,1,"2020-02-21 09:08:52","2020-02-21 09:08:52"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[1,1,"2020-02-21 09:08:52","5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["5",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["5",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["5"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["5"]  	
+----------------------------------------------
+
+delete from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?)	 	["5",1,0]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["5",1,1,"2020-02-21 09:09:05","2020-02-21 09:09:05"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[2,0,"2020-02-21 09:09:05","5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` = ? limit 1	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ?) order by `id` desc	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select `comment_count` from `lara_blogs` where (`id` = ?) limit 1	 	["5"]  	
+----------------------------------------------
+
+update `lara_blogs` set `comment_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[9,"2020-02-21 09:09:30","5"]  	
+----------------------------------------------
+
+insert into `lara_comments` (`comment`, `blog_id`, `userId`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["jhhgjhj","5",2,"2020-02-21 09:09:30","2020-02-21 09:09:30"]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ?) order by `id` desc	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ?) order by `id` desc	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+delete from `lara_comments` where (`id` = ? and `userId` = ? and `blog_id` = ?)	 	["20",2,"5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_comments` where (`blog_id` = ?) order by `id` desc	 	["5"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[2]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["fggdfgd"]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["admin"]  	
+----------------------------------------------
+
+select * from `lara_users` where `username` = ? limit 1	 	["ankit"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_blogs`	 	[]  	
+----------------------------------------------
+
+select count(*) as aggregate from `lara_categories`	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+delete from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?)	 	["6",1,1]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[1,0,"2020-02-21 13:50:39","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes`	 	[]  	
+----------------------------------------------
+
+select * from `lara_blogs` where `lara_blogs`.`id` in (1, 2)	 	[]  	
+----------------------------------------------
+
+select `lara_blogs`.*, `lara_categories`.`category_name`, `lara_users`.`username` from `lara_blogs` inner join `lara_categories` on `lara_blogs`.`category_id` = `lara_categories`.`id` inner join `lara_users` on `lara_blogs`.`added_by` = `lara_users`.`id` order by `lara_blogs`.`id` desc	 	[]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,1,"2020-02-21 13:50:44","2020-02-21 13:50:44"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[2,0,"2020-02-21 13:50:44","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+delete from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?)	 	["6",1,1]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,0,"2020-02-21 13:50:46","2020-02-21 13:50:46"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[1,1,"2020-02-21 13:50:46","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+delete from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?)	 	["6",1,0]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,1,"2020-02-21 13:50:48","2020-02-21 13:50:48"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[2,0,"2020-02-21 13:50:48","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+delete from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?)	 	["6",1,1]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,0,"2020-02-21 13:50:51","2020-02-21 13:50:51"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[1,1,"2020-02-21 13:50:51","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+delete from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?)	 	["6",1,0]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[1,0,"2020-02-21 13:50:52","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,0,"2020-02-21 13:50:53","2020-02-21 13:50:53"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[1,1,"2020-02-21 13:50:53","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+delete from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?)	 	["6",1,0]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,1,"2020-02-21 13:50:54","2020-02-21 13:50:54"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[2,0,"2020-02-21 13:50:54","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+delete from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?)	 	["6",1,1]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[1,0,"2020-02-21 13:50:54","6"]  	
+----------------------------------------------
+
+select * from `lara_users` where `id` = ? limit 1	 	[1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,1]  	
+----------------------------------------------
+
+select * from `lara_like_dislikes` where (`blog_id` = ? and `user_id` = ? and `status` = ?) limit 1	 	["6",1,0]  	
+----------------------------------------------
+
+select `like_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+select `dislike_count` from `lara_blogs` where (`id` = ?) limit 1	 	["6"]  	
+----------------------------------------------
+
+insert into `lara_like_dislikes` (`blog_id`, `user_id`, `status`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)	 	["6",1,0,"2020-02-21 13:50:56","2020-02-21 13:50:56"]  	
+----------------------------------------------
+
+update `lara_blogs` set `like_count` = ?, `dislike_count` = ?, `lara_blogs`.`updated_at` = ? where (`id` = ?)	 	[1,1,"2020-02-21 13:50:56","6"]  	
+----------------------------------------------
+
