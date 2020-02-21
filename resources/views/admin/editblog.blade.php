@@ -10,6 +10,8 @@
                         <h6 class="c-grey-900">Edit Blog</h6>
                         <div class="mT-30">
                             <div id="showErrors"></div>
+                            {{--  This is the form of to update the blog  --}}
+
                             <div id="showSuccess" class="alert alert-success-2" style="display: none"></div>
                             <form  action="{{route('updateBlog')}}" method="post" enctype="multipart/form-data">
                                 <input type="hidden" name="_token" id="_token" value="{{csrf_token()}}">
@@ -25,7 +27,8 @@
                                     <div class="col-sm-10">
                                         <select name="blogCategory" id="blogCategory" class="form-control">
                                             <option value="">Select</option>
-                                            @if($categories)
+                                        {{--   Fetch all the categories and display to the dropdown--}}
+                                        @if($categories)
                                                 @foreach($categories as $category)
                                                     <option value="{{$category->id}}" {{$category->id == $blog->category_id?'selected="selected"':''}}>{{$category->category_name}}</option>
                                                 @endforeach

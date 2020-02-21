@@ -24,6 +24,7 @@
                                     <label for="inputPassword3" class="col-sm-2 col-form-label">Category</label>
                                     <div class="col-sm-10">
                                         <select name="blogCategory" id="blogCategory" class="form-control">
+                                         {{--   Fetch all the categories and display to the dropdown--}}
                                             <option value="">Select</option>
                                             @if($categories)
                                                 @foreach($categories as $category)

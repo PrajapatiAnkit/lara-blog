@@ -91,6 +91,11 @@ class ForumController extends Controller
         }
     }
 
+    /**
+     * @todo This function deletes the comment of the blog
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function deleteComment(Request $request)
     {
         $commentId = $request->input('commentId');
@@ -102,52 +107,13 @@ class ForumController extends Controller
         }
     }
 
-/*    public function doLike(Request $request)
-    {
 
-        $action = $request->input('action');
-        $checkLiked = Like::checkIfUserLiked($request->input('blogId'),Auth::id());
-        $checkDisLiked = DisLike::checkIfUserDisLiked($request->input('blogId'),Auth::id());
-
-        $likeCount = Blog::getLikeCountByBlog($request->input('blogId'));
-        $disLikeCount = Blog::getDislikeCountByBlog($request->input('blogId'));
-
-        if ($action == 'like'){
-            if ($checkLiked){
-                $again = 'againLike';
-                $likeCount = (($likeCount!=0?$likeCount-1:$likeCount));
-                Like::removeLike($request->input('blogId'),Auth::id());
-            }else{
-                $again = 'firstLike';
-                $likeCount = $likeCount+1;
-                $disLikeCount = (($disLikeCount!=0?$disLikeCount-1:$disLikeCount));
-                Like::saveLike($request,Auth::id());
-            }
-
-        }else if ($action == 'dislike'){
-            if ($checkDisLiked){
-                $again = 'againDislike';
-                $disLikeCount = (($likeCount!=0?$likeCount-1:$likeCount));
-                DisLike::removeDisLike($request->input('blogId'),Auth::id());
-            }else{
-                $again = 'firstDislike';
-                $disLikeCount = $disLikeCount+1;
-                DisLike::saveDisLike($request->input('blogId'),Auth::id());
-            }
-        }
-
-         $updateNewLiked = Blog::updateNewLikeDislikeUsers($request->input('blogId'),$likeCount,$disLikeCount,Auth::id(),$action);
-
-        if ($updateNewLiked){
-                return response()->json([
-                    'action'=>$action,
-                    'again' => $again,
-                    'likeCount'=>$likeCount,
-                    'disLikeCount'=>$disLikeCount
-                ]);
-        }
-    }*/
-
+    /**
+     * @todo This function performs the like dislike operation
+     * on particular blog post
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function doLikeDislike(Request $request)
     {
         $userId = Auth::id();
@@ -162,12 +128,18 @@ class ForumController extends Controller
 
         if ($action == 'like'){
             if ($checkLiked){
+                /**
+                 * if user already liked the post
+                 */
                 $again = 'againLike';
                 LikeDislike::removeLike($blogId,$userId);
                 $newLikeCount = (($likeCount!=0?$likeCount-1:$likeCount));
                 $newDislikeCount = $disLikeCount;
             }
             else if ($checkDisLiked && !$checkLiked){
+                /**
+                 * If user already disliked  but not liked the post
+                 */
                 $again = 'firstLike';
                 LikeDislike::removeDisLike($blogId,$userId);
                 LikeDislike::saveLike($blogId,$userId);
@@ -176,6 +148,10 @@ class ForumController extends Controller
                 $newLikeCount = $likeCount+1;
 
             }else if (!$checkLiked && !$checkDisLiked){
+                /**
+                 * If user did not performed like of dislike till now
+                 * but likes the post first time
+                 */
                 $again = 'firstLike';
                 LikeDislike::saveLike($blogId,$userId);
                 $newLikeCount = $likeCount+1;
@@ -183,12 +159,18 @@ class ForumController extends Controller
             }
         }else if ($action == 'dislike'){
             if ($checkDisLiked){
+                /**
+                 * If user already disliked the post
+                 */
                 $again = 'againDislike';
                 LikeDislike::removeDisLike($blogId,$userId);
 
                 $newDislikeCount = (($disLikeCount!=0?$disLikeCount-1:$disLikeCount));
                 $newLikeCount = $likeCount;
             }else if ($checkLiked && !$checkDisLiked){
+                /**
+                 * If user already liked but did not disliked the post
+                 */
                 $again = 'firstDislike';
                 LikeDislike::removeLike($blogId,$userId);
                 LikeDislike::saveDisLike($blogId,$userId);
@@ -197,14 +179,24 @@ class ForumController extends Controller
                 $newDislikeCount = $disLikeCount+1;
 
             }else if (!$checkLiked && !$checkDisLiked){
+                /**
+                 * User neither liked nor disliked the post
+                 *but doing first time dislike
+                 */
                 $again = 'firstDislike';
                 LikeDislike::saveDisLike($blogId,$userId);
                 $newDislikeCount = $disLikeCount+1;
                 $newLikeCount = $likeCount;
             }
         }
+        /**
+         * finally update the new likes and dislikes count against that blog
+         */
         $update = Blog::updateNewLikeDislikeCount($blogId,$newLikeCount,$newDislikeCount);
         if ($update){
+            /**
+             * And returnt the response in json format
+             */
             return response()->json([
                 'action'=>$action,
                 'again' => $again,

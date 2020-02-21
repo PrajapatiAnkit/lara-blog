@@ -43,11 +43,17 @@ class BlogController extends Controller
         $blog->blog_description = $request->input('blogDescription');
         $blog->added_by = Auth::id();
 
+        /**
+         * If user is uploading profile image the store it
+         */
         if (!empty($request->file('blogImage'))){
             $image = $request->file('blogImage');
             $newImageName = rand() . '.' . $image->getClientOriginalExtension();
             $image->move(public_path('assets/uploads'),$newImageName);
         }else{
+            /**
+             * else leave it blank
+             */
             $newImageName = '';
         }
 
@@ -159,15 +165,24 @@ class BlogController extends Controller
     public function updateBlog(BlogRequest $request)
     {
         $preImage = $request->input('preImage');
+        /**
+         * If user is uploading a new profile image, then delete the old one
+         */
         if ($preImage !=''){
             Storage::delete(public_path('assets/uploads'.$preImage));
         }
 
+        /**
+         * If use is uploading new profile image, then save it
+         */
         if (!empty($request->file('blogImage'))) {
             $newBlogImage = $request->file('blogImage');
             $newImageName = rand() . '.' . $newBlogImage->getClientOriginalExtension();
             $newBlogImage->move(public_path('assets/uploads'), $newBlogImage);
         }else{
+            /**
+             * Else leave it blank
+             */
             $newImageName = '';
         }
 

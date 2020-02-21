@@ -143,12 +143,21 @@ class AdminController extends Controller
         }
     }
 
+    /**
+     * @todo This function finds the profile of user logged in and pass it to view
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function showProfile()
     {
         $profile = Admin::find(Auth::id());
         return view('admin.profile',['profileData' => $profile]);
     }
 
+    /**
+     * @todo This function updates the profile of the user
+     * @param ProfileUpdateRequest $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function updateProfile(ProfileUpdateRequest $request)
     {
         $profileUpdate = Admin::updateProfile($request);

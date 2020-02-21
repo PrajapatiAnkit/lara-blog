@@ -4,11 +4,11 @@
     <main class="main-content bgc-grey-100">
         <div id="mainContent">
             <div class="container-fluid">
-{{--                <h4 class="c-grey-900 mT-10 mB-30">Data Tables</h4>--}}
                 <div class="row">
                     <div class="col-md-12">
                         <div class="bgc-white bd bdrs-3 p-20 mB-20">
                             <h4 class="c-grey-900 mB-20">Blog List</h4>
+                        {{--  Display the error or success message on update and delete of the blog  --}}
                             @if($message = Session::has('message'))
                                 <div class="alert alert-success-2">
                                     {{Session::get('message')}}
@@ -27,8 +27,8 @@
                                     <th>Action</th>
                                 </tr>
                                 </thead>
-
                                 <tbody>
+                            {{--   If we have blogs the loop them in a table      --}}
                                  @if($blogs)
                                      @foreach($blogs as $sr=> $blog)
                                      <tr>

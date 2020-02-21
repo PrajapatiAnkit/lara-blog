@@ -8,7 +8,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="bgc-white bd bdrs-3 p-20 mB-20">
-                            @if($message = Session::has('message'))
+                            {{--  Display the error or success message on update and delete of the category  --}}
+
+                        @if($message = Session::has('message'))
                                 <div class="alert alert-success-2">
                                     {{Session::get('message')}}
                                 </div>

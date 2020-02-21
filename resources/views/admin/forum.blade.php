@@ -1,6 +1,9 @@
 @extends('admin.layouts.master')
 @section('title','Forum')
 @section('pageContent')
+    {{--   This page is the main page where we display the post
+        and perform like,dislike and comments --}}
+
     <main class="main-content bgc-grey-100">
         <div id="mainContent">
             <div class="container-fluid">

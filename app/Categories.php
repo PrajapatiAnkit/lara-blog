@@ -33,12 +33,4 @@ class Categories extends Model
         return $query;
     }
 
-    /**
-     * it deleted the category
-     */
-    public function deleteCategory()
-    {
-
-
-    }
 }

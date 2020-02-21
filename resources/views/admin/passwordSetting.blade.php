@@ -1,6 +1,8 @@
 @extends('admin.layouts.master')
 @section('title','Password Setting')
 @section('pageContent')
+    {{--  This layout is the password reset page of the user --}}
+
     <main class="main-content bgc-grey-100">
         <div id="mainContent">
             <div class="row gap-20 masonry pos-r">

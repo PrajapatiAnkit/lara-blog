@@ -1,6 +1,8 @@
 @extends('admin.layouts.master')
 @section('title','Profile')
 @section('pageContent')
+    {{-- This layout is the profile update page of the user  --}}
+
     <main class="main-content bgc-grey-100">
         <div id="mainContent">
             <div class="row gap-20 masonry pos-r">
@@ -8,12 +10,15 @@
                 <div class="masonry-item col-md-6">
                     <div class="bgc-white p-20 bd">
                         <h6 class="c-grey-900">Profile Setting</h6>
-                        @if(Session::has('success'))
+                        {{-- Show the success message on profile update --}}
+
+                    @if(Session::has('success'))
                             <div id="showSuccess" class="alert alert-success-2">
                                 {{Session('success')}}
                             </div>
                         @endif
 
+                        {{-- Show the error message on profile update if any error comes --}}
                         @if(Session::has('error'))
                             <div id="showSuccess" class="alert alert-danger-2">
                                 {{Session('error')}}

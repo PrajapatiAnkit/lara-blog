@@ -80,9 +80,7 @@
     </div>
     <div class="col-12 col-md-4 peer pX-40 pY-80 h-100 bgc-white scrollable pos-r" style="min-width:320px">
         <h4 class="fw-300 c-grey-900 mB-40">Login</h4>
-       {{-- @if(isset(Auth::user()->email))
-            <script>window.location="{{route('dashboard')}}";</script>
-        @endif--}}
+            {{--   This is the main login page form     --}}
             <form id="adminLogin" action="{{route('validateAdminLogin')}}">
             <input type="hidden" name="_token" id="_token" value="{{csrf_token()}}">
 
@@ -111,6 +109,7 @@
                <center> <img src="{{asset('assets/images/loader/loader-icon.gif')}}" id="loaderIcon" style="display: none" ></center>
             </div>
         </form>
+        {{--   //ends the form here    --}}
     </div>
 </div>
 <script type="b2a752f21daf248fccdb74ac-text/javascript" src="{{asset('static/adminator/vendor.js')}}"></script>

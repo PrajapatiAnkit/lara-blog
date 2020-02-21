@@ -1,6 +1,9 @@
 @extends('admin.layouts.master')
 @section('title','Forum detail')
 @section('pageContent')
+    {{-- This page is the detail page of the post
+     if user click on the post --}}
+
     <main class="main-content bgc-grey-100" xmlns="http://www.w3.org/1999/html">
         <div id="mainContent">
             <div class="container-fluid">

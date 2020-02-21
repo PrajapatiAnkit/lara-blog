@@ -10,8 +10,9 @@
                         <h6 class="c-grey-900">Edit Category</h6>
                         <div class="mT-30">
                             <div id="showErrors"></div>
+                            {{--   Display the error or success message on update of the category--}}
 
-                            @if($errors->any())
+                        @if($errors->any())
                                 @foreach($errors->all() as $error)
                                     <div class="alert alert-danger-2">  {{$error}}  </div>
                                 @endforeach

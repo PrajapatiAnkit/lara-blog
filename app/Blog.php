@@ -49,18 +49,35 @@ class Blog extends Model
     }
 
 
-
+    /**
+     * This function returns the total like count
+     * @param $blogId
+     * @return mixed
+     */
     public static function getLikeCountByBlog($blogId)
     {
         $totalLikeCount  = Self::select('like_count')->where(['id'=>$blogId])->first();
         return $totalLikeCount->like_count;
     }
+
+    /**
+     * @todo This function returns the dislikes of the post
+     * @param $blogId
+     * @return mixed
+     */
     public static function getDislikeCountByBlog($blogId)
     {
         $totalDisLikeCount  = Self::select('dislike_count')->where(['id'=>$blogId])->first();
         return $totalDisLikeCount->dislike_count;
     }
 
+    /**
+     * @todo This function updates the new likes and dislikes of the post
+     * @param $blogId
+     * @param $newLikeCount
+     * @param $newDislikeCount
+     * @return mixed
+     */
     public static function updateNewLikeDislikeCount($blogId,$newLikeCount,$newDislikeCount)
     {
 
@@ -84,6 +101,12 @@ class Blog extends Model
 
     }
 
+    /**
+     * @todo This function update the comment of post
+     * @param $blogId
+     * @param $commentCount
+     * @return mixed
+     */
     public static function updateNewCommentCount($blogId,$commentCount)
     {
         $query = Self::where(['id'=>$blogId])->update(['comment_count'=>$commentCount]);

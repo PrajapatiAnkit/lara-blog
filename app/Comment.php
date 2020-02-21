@@ -31,6 +31,9 @@ class Comment extends Model
        $blogId = $request->input('blogId');
        $editCommentId = $request->input('editCommentId');
        if ($editCommentId == ''){
+           /**
+            * if we get the edit to be blank then insert
+            */
            $saveQuery = Self::create([
                    'comment' => $request->input('commentText'),
                    'blog_id' => $blogId,
@@ -38,6 +41,9 @@ class Comment extends Model
                ]
            );
        }else{
+           /**
+            * if not getting edit id then update the records
+            */
            $query = Self::where(['id'=>$editCommentId,'userId'=>$userId])
            ->update(['comment'=>$request->input('commentText')]);
            return $query;

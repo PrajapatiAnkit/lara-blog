@@ -15,21 +15,30 @@ class Admin extends Model
      */
     protected $table = 'users';
 
+    /**
+     * This function updates users profile
+     * @param $request
+     * @return bool
+     */
     public static function updateProfile($request)
     {
         if ($request->input('preProfilePic') !=''){
-//            echo public_path('assets/profile/'.$request->input('preProfilePic'));die();
             unlink(public_path('assets/profile/'.$request->input('preProfilePic')));
         }
 
+        /**
+         * This checks if user selects new profile pic
+         */
         if (!empty($request->file('profilePic'))){
             $file = $request->file('profilePic');
             $profilePicName = $file->getClientOriginalName();
             $file->move(public_path('assets/profile'),$profilePicName);
         }else{
+            /**
+             * else profile pictures remains the same
+             */
             $profilePicName = $request->input('preProfilePic');
         }
-
 
 
         $admin = Self::find(Auth::id());
@@ -37,9 +46,15 @@ class Admin extends Model
         $admin->email = $request->input('email');
         $admin->contact = $request->input('contact');
         $admin->profile = $profilePicName;
+        /**
+         * If profile details saved return true
+         */
         if ($admin->save()){
             return true;
         }else{
+            /**
+             * else return the false
+             */
             return false;
         }
     }
